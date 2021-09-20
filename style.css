@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+/* Atribution */
+.attribution {
+    font-size: 11px; text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+/* Umum */
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan:hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparen-white:hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* Layout */
+.container{
+    font-family: 'Lexend Deca', sans-serif;
+    padding:20px;
+    /* margin-right: auto;
+    margin-left: auto;
+    border: 2px solid black; */
+}
+.card{
+    font-family: 'Big Shoulders Display', cursive;
+    padding:30px;
+}
+
+.sedan{
+    background-color: var(--bright-orange);
+    border-radius: 10px 10px 0 0;
+}
+
+.suvs{
+    background-color: var(--dark-cyan);
+}
+
+.luxury{
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 0 10px 10px;
+}
+
+button{
+    border: none;
+    padding: 1rem;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 3.5rem;
+    background-color: var(--very-light-gray); 
+    margin-top: 3.5rem;
+}
+
+.sedan button{
+    color: var(--bright-orange);
+}
+
+.suvs button{
+    color: var(--dark-cyan);
+}
+
+.luxury button{
+    color: var(--very-dark-cyan);
+}
+
+button:hover{
+    color: var(--transparen-white);
+    cursor: pointer;
+    border: 2px solid hsl(0, 0%, 95%);
+}
+.sedan button:hover{
+    background-color: var(--bright-orange);
+}
+.suvs button:hover{
+    background-color: var(--dark-cyan);
+}
+.luxury button:hover{
+    background-color: var(--very-dark-cyan);
+}
+
+/* Typography */
+.card h1{
+    margin-bottom: 1.5rem;
+    color: var(--very-light-gray);
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+
+.card p{
+    color: var(--transparen-white);
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.7;
+}
+/* Image */
+.card img{
+    margin-bottom: 2.4rem;
+}
+
+@media (min-width:820px) {
+    .container{
+        display: flex;
+        width: 800px;
+        margin: 0 auto;
+    }
+    .sedan{
+        border-radius: 10px 0 0 10px;
+    }
+    .luxury{
+        border-radius: 0 10px 10px 0;
+    }
+
+}
